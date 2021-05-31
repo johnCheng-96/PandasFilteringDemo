@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ba3bf109-af1c-4281-a249-4960755b1813" name="Default Changelist" comment="Retrieved covid data, filter with logical operator">
-      <change afterPath="$PROJECT_DIR$/.idea/other.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/webResources.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/PandasFilteringDemo.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/PandasFilteringDemo.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="ba3bf109-af1c-4281-a249-4960755b1813" name="Default Changelist" comment="Retrieved covid data, extract three columns to display Hong Kong daily new cases and new vaccination">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
     </list>
@@ -57,9 +53,6 @@
       <module name="PandasFilteringDemo" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
       <option name="SDK_HOME" value="" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="IS_MODULE_SDK" value="true" />
@@ -91,7 +84,16 @@
       <updated>1622434305609</updated>
       <workItem from="1622434313065" duration="6000" />
       <workItem from="1622448155072" duration="5602000" />
+      <workItem from="1622478035273" duration="671000" />
     </task>
+    <task id="LOCAL-00001" summary="Retrieved covid data, extract three columns to display Hong Kong daily new cases and new vaccination">
+      <created>1622478288827</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1622478288827</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -107,6 +109,11 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Retrieved covid data, extract three columns to display Hong Kong daily new cases and new vaccination" />
+    <option name="LAST_COMMIT_MESSAGE" value="Retrieved covid data, extract three columns to display Hong Kong daily new cases and new vaccination" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/PandasFilteringDemo$main.coverage" NAME="main Coverage Results" MODIFIED="1622450434319" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />

@@ -27,14 +27,20 @@ if __name__ == '__main__':
 
     ax_right.plot(onlyPlaceVaccinated["date"], onlyPlaceVaccinated["new_vaccinations"], label="new_vaccinations")
 
-    plt.title("Covid situation in Hong Kong over time")
+    plt.title("Covid Situation In Hong Kong Over Time", loc='left')
     fig.legend()
 
     plt.show()
 
-    # filter one or more value
+    # TODO: filter one or more value
 
-    #
+    # TODO: filter one or more range of values
+
+    # TODO: np.where to filter
+
+    # TODO: process data
+
+    # TODO: cleaning data
 
 
 
