@@ -49,7 +49,6 @@ if __name__ == '__main__':
 
 
 
-    # TODO: What is the Hong Kong accumulated covid cases in 2020? (filtering date)
 
     # TODO: Countries with 5M or more total cases ( > operator)
 
