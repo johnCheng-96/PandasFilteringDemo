@@ -1,4 +1,4 @@
-""" which country has the highest accumulated covid cases? """
+""" which country has the highest accumulated covid cases? (Tilde operator and Nlargest) """
 
 import numpy as np
 import pandas as pd

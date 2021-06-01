@@ -1,4 +1,4 @@
-""" show all locations (no duplicate) """
+""" show all locations (no duplicate) (unique()) """
 
 import pandas as pd
 import numpy as np
