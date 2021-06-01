@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ba3bf109-af1c-4281-a249-4960755b1813" name="Default Changelist" comment="show all locations (no duplicate)">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/showAllLocations.py" beforeDir="false" afterPath="$PROJECT_DIR$/showAllLocations.py" afterDir="false" />
+    <list default="true" id="ba3bf109-af1c-4281-a249-4960755b1813" name="Default Changelist" comment="which country has the highest accumulated covid cases?">
       <change beforePath="$PROJECT_DIR$/whichCountryHasTheHighestAccumulatedCovidCases.py" beforeDir="false" afterPath="$PROJECT_DIR$/whichCountryHasTheHighestAccumulatedCovidCases.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -162,7 +160,7 @@
       <updated>1622434305609</updated>
       <workItem from="1622434313065" duration="6000" />
       <workItem from="1622448155072" duration="5602000" />
-      <workItem from="1622478035273" duration="7623000" />
+      <workItem from="1622478035273" duration="7935000" />
     </task>
     <task id="LOCAL-00001" summary="Retrieved covid data, extract three columns to display Hong Kong daily new cases and new vaccination">
       <created>1622478288827</created>
@@ -185,7 +183,14 @@
       <option name="project" value="LOCAL" />
       <updated>1622553634058</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="which country has the highest accumulated covid cases?">
+      <created>1622554299673</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1622554299673</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -207,7 +212,8 @@
     <MESSAGE value="Retrieved covid data, extract three columns to display Hong Kong daily new cases and new vaccination" />
     <MESSAGE value="adjust legend and title locations" />
     <MESSAGE value="show all locations (no duplicate)" />
-    <option name="LAST_COMMIT_MESSAGE" value="show all locations (no duplicate)" />
+    <MESSAGE value="which country has the highest accumulated covid cases?" />
+    <option name="LAST_COMMIT_MESSAGE" value="which country has the highest accumulated covid cases?" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/PandasFilteringDemo$main.coverage" NAME="main Coverage Results" MODIFIED="1622450434319" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />

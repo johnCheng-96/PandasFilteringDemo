@@ -18,5 +18,9 @@ if __name__ == '__main__':
     ''' then we know the location with the most accumulated Covid cases '''
     maxNumOfCases = totalCasesAtLocation.total_cases.max()
 
-    print(totalCasesAtLocation[totalCasesAtLocation.total_cases == maxNumOfCases])
+    countryWithMostCases = totalCasesAtLocation[totalCasesAtLocation.total_cases == maxNumOfCases].location.item()
+
+    numOfCasesFromCountryWithMostCases = totalCasesAtLocation[totalCasesAtLocation.total_cases == maxNumOfCases].total_cases.item()
+
+    print("Country with the most cases is : " + countryWithMostCases + " with " + str(int(numOfCasesFromCountryWithMostCases)) + " cases")
 
