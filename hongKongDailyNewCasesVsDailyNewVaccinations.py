@@ -47,6 +47,8 @@ if __name__ == '__main__':
 
     # TODO: Show all column names
 
-    # TODO: show all locations (no duplicate)
+
+
+
 
 
