@@ -14,14 +14,20 @@ if __name__ == '__main__':
     totalCasesAtLocation = covidDf[~covidDf.continent.isna()][['date', 'location', 'total_cases']]
 
 
+    ''' get row with the largest number of total_cases '''
+    ''' using nlargest approach '''
+    countryWithMostCases = totalCasesAtLocation.nlargest(1, 'total_cases').location.item()
+    numOfCasesFromCountryWithMostCases = totalCasesAtLocation.nlargest(1, 'total_cases').total_cases.item()
+
+
 
     ''' Here just need to find the max number of total cases of all data '''
     ''' then we know the location with the most accumulated Covid cases '''
-    maxNumOfCases = totalCasesAtLocation.total_cases.max()
-
-    countryWithMostCases = totalCasesAtLocation[totalCasesAtLocation.total_cases == maxNumOfCases].location.item()
-
-    numOfCasesFromCountryWithMostCases = totalCasesAtLocation[totalCasesAtLocation.total_cases == maxNumOfCases].total_cases.item()
+    # maxNumOfCases = totalCasesAtLocation.total_cases.max()
+    #
+    # countryWithMostCases = totalCasesAtLocation[totalCasesAtLocation.total_cases == maxNumOfCases].location.item()
+    #
+    # numOfCasesFromCountryWithMostCases = totalCasesAtLocation[totalCasesAtLocation.total_cases == maxNumOfCases].total_cases.item()
 
     print("Country with the most cases is : " + countryWithMostCases + " with " + str(int(numOfCasesFromCountryWithMostCases)) + " cases")
 

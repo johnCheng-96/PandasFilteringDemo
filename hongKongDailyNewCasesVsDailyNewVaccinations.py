@@ -47,13 +47,11 @@ if __name__ == '__main__':
 
     plt.show()
 
-    # TODO: What is the daily global new cases? (using Str accessor approach)
-
     # TODO: What is the daily global new vaccinations? (using Isin approach)
 
     # TODO: What is the Hong Kong accumulated covid cases in 2020? (filtering date)
 
-    # TODO: Countries with 5M or more total cases
+    # TODO: Countries with 5M or more total cases ( > operator)
 
 
 
