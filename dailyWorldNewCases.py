@@ -10,7 +10,7 @@ if __name__ == '__main__':
 
     ''' select "World" in 'location' column '''
     ''' using str accessor approach here '''
-    worldDF = covidDf[covidDf.location.str.contains("World")]
+    worldDF = covidDf[covidDf.location.str.contains(r"\bWorld\b")]
 
     worldNewCases = worldDF[['date', 'new_cases']]
 
