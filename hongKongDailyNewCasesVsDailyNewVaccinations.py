@@ -50,9 +50,8 @@ if __name__ == '__main__':
 
 
 
-    # TODO: Countries with 5M or more total cases ( > operator)
 
-    # TODO: The Country with the least cases today ( date filtering and nsmallest)
+
 
 
 

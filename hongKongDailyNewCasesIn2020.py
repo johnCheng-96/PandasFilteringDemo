@@ -1,4 +1,4 @@
-# TODO: What is the Hong Kong daily new covid cases in 2020? (filtering date)
+"""What is the Hong Kong daily new covid cases in 2020? (filtering date)"""
 
 import numpy as np
 import pandas as pd
