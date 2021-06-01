@@ -1,6 +1,4 @@
-'''
-which country has the highest accumulated covid cases?
-'''
+""" which country has the highest accumulated covid cases? """
 
 import numpy as np
 import pandas as pd
@@ -11,7 +9,10 @@ if __name__ == '__main__':
 
     ''' need to get rid of the world and continent data '''
     ''' by removing rows with null value in 'continent' column '''
-    totalCasesAtLocation = covidDf[covidDf.continent.notna()][['date', 'location', 'total_cases']]
+
+    ''' ~ and isna() approach is same as notna(), this is for showcase purposes '''
+    totalCasesAtLocation = covidDf[~covidDf.continent.isna()][['date', 'location', 'total_cases']]
+
 
 
     ''' Here just need to find the max number of total cases of all data '''

@@ -1,3 +1,5 @@
+""" Hong Kong daily new cases vs daily new vaccinations (query approach) """
+
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
@@ -8,12 +10,19 @@ if __name__ == '__main__':
     covidVaccineDf = pd.read_csv("resources/owid-covid-data.csv")
 
     '''
-    ### Hong Kong daily new cases vs daily new vaccinations
+    ### 
 
     1. Only get data that matches "Hong Kong" in 'location' column
     2. Then, extract three columns from dataframe: 'date', 'new_cases', 'new_vaccinations'
     '''
-    hongKongNewCasesVsNewVaccinationsDf = covidVaccineDf[covidVaccineDf.location == "Hong Kong"][["date", "new_cases", "new_vaccinations"]]
+    # hongKongNewCasesVsNewVaccinationsDf = covidVaccineDf[covidVaccineDf.location == "Hong Kong"][["date", "new_cases", "new_vaccinations"]]
+
+    ''' query approach '''
+
+    hongKongNewCasesVsNewVaccinationsDf = covidVaccineDf.query('location == "Hong Kong"')[["date", "new_cases", "new_vaccinations"]]
+
+    print(hongKongNewCasesVsNewVaccinationsDf)
+
 
     '''
     3. Since there is a lot of null data for new_vaccinations, use fillna() to fill the null data
@@ -39,13 +48,13 @@ if __name__ == '__main__':
     plt.show()
 
 
-    # TODO: What is the daily global new cases?
+    # TODO: What is the daily global new cases? (using Str accessor approach)
 
-    # TODO: What is the daily global new vaccinations?
+    # TODO: What is the daily global new vaccinations? (using Isin approach)
 
     # TODO: What is the Hong Kong accumulated covid cases in 2020?
 
-    # TODO: Show all column names
+    # TODO: query() use it some where
 
 
 
