@@ -15,14 +15,11 @@ if __name__ == '__main__':
     1. Only get data that matches "Hong Kong" in 'location' column
     2. Then, extract three columns from dataframe: 'date', 'new_cases', 'new_vaccinations'
     '''
-    # hongKongNewCasesVsNewVaccinationsDf = covidVaccineDf[covidVaccineDf.location == "Hong Kong"][["date", "new_cases", "new_vaccinations"]]
+    hongKongNewCasesVsNewVaccinationsDf = covidVaccineDf[covidVaccineDf.location == "Hong Kong"][["date", "new_cases", "new_vaccinations"]]
 
     ''' query approach '''
 
     hongKongNewCasesVsNewVaccinationsDf = covidVaccineDf.query('location == "Hong Kong"')[["date", "new_cases", "new_vaccinations"]]
-
-    print(hongKongNewCasesVsNewVaccinationsDf)
-
 
     '''
     3. Since there is a lot of null data for new_vaccinations, use fillna() to fill the null data
@@ -45,7 +42,7 @@ if __name__ == '__main__':
     plt.title("Covid Situation In Hong Kong Over Time", loc='left')
     fig.legend()
 
-    plt.show()
+    plt.savefig("hongKongDailyNewCasesVsDailyNewVaccinations.png", dpi=1000)
 
 
 

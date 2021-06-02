@@ -10,7 +10,7 @@ if __name__ == '__main__':
 
     hongKongDf = covidDf[covidDf.location.str.contains(r"\bHong Kong\b")]
 
-    start_date = "2020-1-1"
+    start_date = "2020-01-01"
 
     end_date = "2020-12-31"
 
@@ -24,17 +24,19 @@ if __name__ == '__main__':
 
     hongKongNewCasesIn2020 = hongKongDfIn2020[['date', 'new_cases']]
 
+
+
     ''' markdown showcase '''
-    print(hongKongNewCasesIn2020.to_markdown())
+    # print(hongKongNewCasesIn2020.to_markdown())
 
     ''' plot '''
 
     plt.xticks(rotation=90)
-    # plt.tick_params(axis='x', which='major', labelsize=3)
+    plt.tick_params(axis='x', which='major', labelsize=1)
 
     plt.plot(hongKongNewCasesIn2020['date'], hongKongDfIn2020['new_cases'])
 
-    plt.show()
+    plt.savefig("hongKongNewCasesIn2020.png", dpi=1000)
 
 
 

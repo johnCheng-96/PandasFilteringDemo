@@ -24,8 +24,6 @@ if __name__ == '__main__':
 
     plt.savefig("allCountriesDailyNewCases.png", dpi=1000, bbox_inches='tight')
 
-    # TODO: sort countries and plot top 10 only
-
     ''' sum all new cases group by each country '''
 
 
