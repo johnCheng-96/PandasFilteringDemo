@@ -8,10 +8,6 @@ if __name__ == '__main__':
 
     # print(covidVaccineDf)
 
-    # TODO: Eight ways to filter dataframe
-
-    # TODO: Hong Kong daily new cases vs daily new vaccinations
-
     # extract three columns
     hongKongNewCasesVsNewVaccinationsDf = covidVaccineDf[covidVaccineDf.location == "Hong Kong"][
         ["date", "new_cases", "new_vaccinations"]]
@@ -65,14 +61,10 @@ if __name__ == '__main__':
     # idxmax() and loc[] : when does Hong Kong have the highest number of new cases?
     print(hongKongNewCasesVsNewVaccinationsDf.loc[hongKongNewCasesVsNewVaccinationsDf[['new_cases']].idxmax()])
 
-    # TODO: filter one or more value
-    # TODO: which country has the highest accumulated covid cases?
-
-
-    # TODO: filter one or more range of values
-
     # TODO: np.where to filter
 
     # TODO: process data
 
     # TODO: cleaning data
+
+    # TODO: display all countries daily new cases in one plot

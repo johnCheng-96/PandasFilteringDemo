@@ -1,4 +1,4 @@
-"""Countries with 5M or more total cases ( > operator and query)"""
+"""Countries with 5M or more total cases ( > operator, query and groupby)"""
 
 import pandas as pd
 import numpy as np
